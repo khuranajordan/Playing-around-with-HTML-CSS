@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <style>
+         *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        img {
+            height: auto;
+        }
+        
+        .container {
+            align-items: center;
+            transition: 0.2s;
+        }
+        .container:hover{
+            color: rgb(121, 41, 201);
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+            background-color: white;
+            color: red;
+            border: 2px solid red;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+        button:hover {
+            height: 40px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            border: 2px solid red;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+        * {
+            background-color: rgb(232, 225, 216);
+        }
+
+        #parent {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3, 320px);
+            grid-template-rows: repeat(3, 150px);
+            gap: 20px 20px;
+            padding-top: 100px;
+        }
+        #parent>div:nth-child(1)
+        {
+            background-color: white;
+        }
+        #parent>div {
+            border: 1px solid white;
+            border-radius: 10px;
+            display: grid;
+            transition: 0.2s;
+            grid-template-areas: "one two""three three"; 
+        }
+        #parent>div:hover {
+            border: 1px solid white;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            display: grid;
+            grid-template-areas: "one two""three three"; 
+        }
+        h1, h2{
+            font-size: 25px;
+        }
+        #parent>div>h1{
+            grid-area: one;
+            text-align: left;
+            background-color: white;
+            margin-left: 20px;
+        }
+        #parent>div>h2{
+            grid-area: two;
+            text-align: right;
+            color: rgb(206, 152, 86);
+            background-color: white;
+            margin-right: 20px;
+        }
+        #parent>div>p{
+            grid-area: three;
+            background-color: white;
+            margin: 2px 2px 10px 20px;
+        }
+        .item{
+            background-color: white;
+        }
+        @media screen and (min-width: 320px) and (max-width: 768px){
+            #parent {
+            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px 20px;
+            }
+
+        }
+        @media screen and (max-width: 319px){
+            #parent {
+            justify-content: center;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <a href="#">
+            <div id="logo"><img src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/masai_logo.svg"
+                    alt="logo"></div>
+        </a>
+        <div class="container">COURSES</div>
+        <div class="container">FEES & ISA</div>
+        <div class="container">ABOUT US</div>
+        <div class="container">HIRE FROM US</div>
+        <div class="container">FAQ</div>
+        <div class="container">EVENTS</div>
+        <div class="container" style="background-color: rgba(191, 245, 245, 0.478); width: 200px; text-align: center; height: 40px; display: flex; justify-content: center;
+        color: rgb(121, 41, 201);
+       ">REFER & EARN</div>
+        <a href="#">
+            <div><button>LOGIN</button></div>
+        </a>
+    </div>
+    <div id="parent">
+        <div class="item">
+            <h1>Cappuccino</h1>
+            <h2>$49</h2>
+            <p>Usage of the internet is becoming more common due to rapid advance</p>
+        </div>
+        <div class="item">
+            <h1>Cappuccino</h1>
+            <h2>$49</h2>
+            <p>Usage of the internet is becoming more common due to rapid advance</p>
+        </div>
+        <div class="item">
+            <h1>Cappuccino</h1>
+            <h2>$49</h2>
+            <p>Usage of the internet is becoming more common due to rapid advance</p>
+        </div>
+        <div class="item">
+            <h1>Cappuccino</h1>
+            <h2>$49</h2>
+            <p>Usage of the internet is becoming more common due to rapid advance</p>
+        </div>
+        <div class="item">
+            <h1>Cappuccino</h1>
+            <h2>$49</h2>
+            <p>Usage of the internet is becoming more common due to rapid advance</p>
+        </div>
+        <div class="item">
+            <h1>Cappuccino</h1>
+            <h2>$49</h2>
+            <p>Usage of the internet is becoming more common due to rapid advance</p>
+        </div>
+        <div class="item">
+            <h1>Cappuccino</h1>
+            <h2>$49</h2>
+            <p>Usage of the internet is becoming more common due to rapid advance</p>
+        </div>
+        <div class="item">
+            <h1>Cappuccino</h1>
+            <h2>$49</h2>
+            <p>Usage of the internet is becoming more common due to rapid advance</p>
+        </div>
+        <div class="item">
+            <h1>Cappuccino</h1>
+            <h2>$49</h2>
+            <p>Usage of the internet is becoming more common due to rapid advance</p>
+        </div>
+    </div>
+</body>
+
+</html>
